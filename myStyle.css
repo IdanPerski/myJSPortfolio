@@ -1,16 +1,33 @@
 .myNavbar {
-    background-color: rgba(0, 152, 155) !important;
+    background-color: rgb(23, 188, 190) !important;
 }
 
-.first-section-style {
-    height: 50vh;
-    background-color: rgba(0, 94, 120);
+.first-div-style {
+    background-color: rgb(98, 141, 152);
+    display: flex;
+
 }
 
-.sec-section-style {
-    height: 50vh;
-    background-color: rgba(0, 94, 120);
+
+.header-div {
+    height: 20vh;
+    flex-basis: 1;
+    display: table-cell;
+    vertical-align: middle;
+
 }
+
+li {
+    list-style-type: none;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 2;
+}
+
 
 
 
