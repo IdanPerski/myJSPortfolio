@@ -15,6 +15,7 @@
     display: table-cell;
     vertical-align: middle;
 
+
 }
 
 li {
@@ -26,6 +27,12 @@ li {
     flex-direction: row;
     justify-content: space-evenly;
     flex-basis: 2;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+img {
+    width: 11rem;
 }
 
 
