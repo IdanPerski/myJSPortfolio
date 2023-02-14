@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.myNavbar {
+    background-color: #9096e6 !important;
+}
+
+.first-div-style {
+    background-color: #e7e7d9;
+    display: flex;
+
+}
+
+
+ul>img {
+    width: 3.5rem;
+    object-fit: 100%;
+    margin: 0 auto;
+
+}
+
+.main-tech-list {
+    background-color: #c2bff5;
+
+}
+
+img {
+    width: 11rem;
+}
+
+.project-header:hover {
+    cursor: pointer;
+    color: rgb(126, 134, 102);
+}
+
+textarea {
+    height: 10rem !important;
+}
+
+footer {
+    background-color: #9096e6 !important;
+}
+
+address {
+    height: 4rem;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .contact-div-photo {
+        display: none !important;
+    }
+
+    /* form {
+        width: 100%;
+    } */
+}
+
+
+
+
+/* $turqise: rgba(0, 152, 155, 1); // rgb(148, 83, 166)
+$myDarkBlue: rgba(0, 94, 120, 1); */
