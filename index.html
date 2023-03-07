@@ -18,25 +18,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light myNavbar">
+    <nav class="navbar navbar-expand-lg myNavbar 
+sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Idan Perski</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span> -->
             </button>
-            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex  ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex">
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
                     </li>
-                </ul>
-
+                </ul> -->
             </div>
         </div>
     </nav>
+
+
 
 
     <section class=" mx-auto d-block    first-div-style   ">
@@ -56,11 +60,11 @@
         </div>
 
         <section class=" container container-fluid row mx-auto w-75" id="projectSection">
-
+            <!--1. Flight app  -->
             <div class="card mb-3 mx-auto col-12">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/200/200?random=731" class="img-fluid rounded pt-1 pb-1">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/airport.jpg" class="img-fluid rounded pt-1 pb-1">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -77,51 +81,121 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 mx-auto col-12">
+            <!-- 2. Movies App -->
+            <div class="card mb-3 mx-auto col-12 ">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/200/200?random=72d1" class="img-fluid rounded pt-1 pb-1">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/moviesPoster.jpeg" class="img-fluid rounded pt-1 pb-1">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title project-header">Movies App</h5>
-                            <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-                                architecto cumque delectus eaque, deserunt eos repellendus praesentium ratione veniam
-                                nam animi reprehenderit harum nisi! Ipsa vero sed molestias quo aliquid.
+                            <p class="card-text"> The code defines a constructor function Movie that takes in several
+                                properties for a movie, such as name, length in
+                                minutes, category, and price. It then creates an HTML element for the movie, including
+                                an image and a delete button. It
+                                also creates an array of movie objects, and displays them on the webpage, along with a
+                                search bar to filter the movies
+                                and a form to add new movies.
+
+                                The code also includes functionality for filtering movies by length, sorting movies by
+                                various properties such as
+                                category and price, and deleting movies from the array and adding them to an archive
+                                array.
+
+                                Overall, the code is a simple web application for managing a collection of movies.
                             </p>
 
                         </div>
                     </div>
                 </div>
             </div>
+            <!--3. Crypto app -->
             <div class="card mb-3 mx-auto col-12">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/200/200?random=71d1" class="img-fluid rounded pt-1 pb-1">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/MegaplanIT-Crypto.jpg" class="img-fluid rounded pt-1 pb-1 ">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title project-header">CryptoCurrency App</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-                                similique quas voluptatibus ut eum autem, itaque, minima ea sapiente nisi, voluptas odit
-                                commodi repellat harum. Similique tempore alias quisquam reprehenderit?
+                            <p class="card-text">This project is a web page that displays data on cryptocurrencies from
+                                the Binance API. It uses JavaScript to fetch data
+                                from the API and create an array of Exchange objects with the fetched data. The page
+                                displays a table of the data, and
+                                allows users to filter the data by currency name, price range, and volume range. It also
+                                has a feature to display the
+                                top 10 currencies by volume.
                             </p>
 
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- 4. car game -->
             <div class="card mb-3 mx-auto col-12">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/200/200?random=791" class="img-fluid rounded pt-1 pb-1">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/racing.png" class="img-fluid rounded pt-1 pb-1">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title project-header">Car Game</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-                                similique quas voluptatibus ut eum autem, itaque, minima ea sapiente nisi, voluptas odit
-                                commodi repellat harum. Similique tempore alias quisquam reprehenderit?
+                            <p class="card-text">The game was built using JavaScript classes, HTML grid layout, and CSS
+                                for styling. The Car class creates a car object
+                                with properties such as direction, location, and rotation. The Target and Bomb classes
+                                create objects for the randomly
+                                generated targets and bombs, respectively. The game includes functions for handling key
+                                events, detecting collisions
+                                between the car and targets/bombs, and updating the score display. The game also
+                                features functions for preventing the
+                                targets and bombs from occupying the same location on the grid.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--5 bookmarks -->
+            <div class="card mb-3 mx-auto col-12">
+                <div class="row g-0">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/Bookmark.png" class="img-fluid rounded pt-1 pb-1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title project-header">Website bookmarks</h5>
+                            <p class="card-text">This is a simple web application that allows users to add and save
+                                bookmarks for their favorite websites. The
+                                application is built using HTML, CSS, and JavaScript and uses Bootstrap and Font Awesome
+                                for styling and icons. It also
+                                makes use of LocalStorage to store the saved bookmarks in the browser, making them
+                                available even after the user closes
+                                the browser or refreshes the page.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--6 Timer -->
+            <div class="card mb-3 mx-auto col-12">
+                <div class="row g-0">
+                    <div class="col-md-4 mx-auto my-auto">
+                        <img src="./images/timer.png" class="img-fluid rounded pt-1 pb-1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title project-header">Timer-app</h5>
+                            <p class="card-text">This project is a simple web-based timer application built using HTML,
+                                CSS, and JavaScript. It allows users to set a
+                                countdown timer by entering minutes and seconds, along with a description of the timer.
+                                The application includes
+                                features such as starting, stopping, and deleting timers. The timer display updates in
+                                real-time and includes a visual
+                                representation of the remaining time. The application uses event listeners and DOM
+                                manipulation to dynamically update
+                                the interface based on user input.
                             </p>
 
                         </div>
@@ -134,7 +208,7 @@
         </section>
 
         <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="flightAppPage">
-
+            <!--1. Flight app page -->
             <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-12">
@@ -149,10 +223,10 @@
 
                                 </ul>
                             </div>
-                            <p class="card-text text-center">This is a wider card with supporting text below as a
-                                natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloremque perspiciatis accusantium quae. Non excepturi nobis officiis debitis est!
+                                Sapiente, molestiae porro voluptate similique sunt alias corrupti dolorem illo ad
+                                eligendi?</p>
 
 
                         </div>
@@ -180,6 +254,7 @@
 
 
         </section>
+        <!-- Movies App page -->
         <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="moviesApp">
 
             <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
@@ -224,6 +299,7 @@
 
 
         </section>
+        <!--3 Crypto App page -->
         <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="CryptoCurrencyApp">
 
             <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
@@ -240,21 +316,20 @@
 
                                 </ul>
                             </div>
-                            <p class="card-text text-center">displaying data from API inside table </p>
+                            <p class="card-text text-center"> </p>
 
 
                         </div>
                     </div>
                     <div class="col-md-12 mx-auto">
-                        <img src="https://picsum.photos/400/300?random=271"
-                            class="img-fluid rounded mx-auto d-block p-1 w-75">
+                        <img src="./images/MegaplanIT-Crypto.jpg" class="img-fluid rounded mx-auto d-block p-1 w-75">
 
                         <div class="col-md-6 mx-auto m-2">
 
                             <button type="button" class="btn btn-outline-secondary back-to-main-page">Back
 
                             </button>
-                            <a href="./projects/moviesApp.zip" download>
+                            <a href="./projects/crypto.zip" download>
                                 <button type="button" class="btn btn-outline-primary">
                                     Download
                                 </button>
@@ -268,37 +343,132 @@
 
 
         </section>
-        <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="Car Game">
+        <!--4 car game page -->
+        <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="carGame">
+
+            <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body row">
+                            <h5 class="card-title text-center col-12">Car game</h5>
+                            <div class="col-12 row">
+                                <ul class="mx-auto d-flex align-items-center col-6  ">
+                                    <img class="d-block" src="./images/oop.png" alt="" srcset="">
+                                </ul>
+                            </div>
+                            <p class="card-text text-center">This project is a simple browser-based game where the
+                                player controls a car using arrow keys to catch targets and avoid
+                                bombs. The game ends if the car hits a bomb. The player's score is updated each time
+                                they catch a target, and a modal
+                                window pops up displaying the final score after the game ends.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mx-auto">
+                        <img src="./images/car-640.png" class="img-fluid rounded mx-auto d-block p-1 w-75">
+
+                        <div class="col-md-6 mx-auto m-2">
+
+                            <button type="button" class="btn btn-outline-secondary back-to-main-page">Back
+
+                            </button>
+                            <a href="./projects/carGame.zip" download>
+                                <button type="button" class="btn btn-outline-primary">
+                                    Download
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 5. bookmarks page -->
+        <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="bookmarksApp">
 
             <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-12">
                         <div class="card-body row">
 
-                            <h5 class="card-title text-center col-12">Car game</h5>
+                            <h5 class="card-title text-center col-12">Bookmark Page</h5>
                             <div class="col-12 row">
                                 <ul class="mx-auto d-flex align-items-center col-6  ">
                                     <img class="d-block" src="./images/oop.png" alt="" srcset="">
-
-
-
+                                    <img src="https://img.icons8.com/color/96/null/bootstrap.png" />
                                 </ul>
                             </div>
-                            <p class="card-text text-center"> moving and adding object based on keyboard events </p>
+                            <p class="card-text text-center"> This project is a bookmark manager that allows users to
+                                save and organize their favorite websites. It uses JavaScript
+                                and LocalStorage to store and retrieve user data, and dynamically generates HTML
+                                elements to display the bookmarks. The
+                                user can add, delete, and clear bookmarks, and the interface is designed to be simple
+                                and user-friendly. </p>
 
 
                         </div>
                     </div>
                     <div class="col-md-12 mx-auto">
-                        <img src="https://picsum.photos/400/300?random=271"
-                            class="img-fluid rounded mx-auto d-block p-1 w-75">
+                        <img src="./images/Bookmark.png" class="img-fluid rounded mx-auto d-block p-1 w-75">
 
                         <div class="col-md-6 mx-auto m-2">
 
                             <button type="button" class="btn btn-outline-secondary back-to-main-page">Back
 
                             </button>
-                            <a href="./projects/moviesApp.zip" download>
+                            <a href="./projects/bookmarkSite.zip" download>
+                                <button type="button" class="btn btn-outline-primary">
+                                    Download
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 6. Timer page -->
+        <section class=" container container-fluid d-none row w-50 mx-auto project-page" id="bookmarksApp">
+
+            <div class="card mb-3 mx-auto col-12 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body row">
+
+                            <h5 class="card-title text-center col-12">Timer Page</h5>
+                            <div class="col-12 row">
+                                <ul class="mx-auto d-flex align-items-center col-6  ">
+                                    <img class="d-block" src="./images/oop.png" alt="" srcset="">
+                                    <img src="https://img.icons8.com/color/96/null/bootstrap.png" />
+                                </ul>
+                            </div>
+                            <p class="card-text text-center">This project is a simple timer application built using
+                                JavaScript and HTML/CSS. It allows users to set a timer by
+                                specifying the number of minutes and seconds, give a description for the timer, and then
+                                start, stop, and delete the
+                                timer. The timer is displayed on the page in a container along with buttons to control
+                                it. The code includes functions
+                                for creating and formatting the timer, as well as for starting, stopping, and deleting
+                                it. It also includes input
+                                validation to ensure that the user enters valid values for minutes and seconds. </p>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 mx-auto">
+                        <img src="./images/timer.png" class="img-fluid rounded mx-auto d-block p-1 w-75">
+
+                        <div class="col-md-6 mx-auto m-2">
+
+                            <button type="button" class="btn btn-outline-secondary back-to-main-page">Back
+
+                            </button>
+                            <a href="./projects/Timer.zip" download>
                                 <button type="button" class="btn btn-outline-primary">
                                     Download
                                 </button>
@@ -313,11 +483,13 @@
 
         </section>
 
-        <section class="container container-fluid mx-auto row mt-5 bg-light p-3 rounded">
+        <!-- contact me -->
+
+        <section class="container container-fluid mx-auto row mt-5 bg-light p-3 rounded contact-section">
+            <h1 class="text-center"> Contact me </h1>
 
             <div class="col-lg-6  col-md-6 d-flex contact-div-photo">
-                <img src="https://picsum.photos/800/600?random=231"
-                    class="img-fluid rounded mx-auto my-auto d-block w-100 p-5 ">
+                <img src="./images/connections.png" class="img-fluid rounded mx-auto my-auto d-block w-75 p-5 ">
             </div>
 
             <form class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center ">
@@ -346,16 +518,25 @@
 
         </section>
 
-        <footer class="mt-3">
-            <div class="contact-footer   ">
-                <address class="d-flex justify-content-evenly align-items-center ">
-                    <i class="fa-brands fa-github fa-2xl"></i>
-                    <i class="fa-brands fa-linkedin fa-2xl"></i>
-                </address>
+        <footer class="mt-3 py-3 ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="w-50">
+                        <address class="d-flex justify-content-evenly align-items-center">
+                            <a href="#"><i class="text-dark fab fa-github fa-2x "></i></a>
+                            <a href="#"><i class="text-dark fab fa-linkedin fa-2x"></i></a>
+                        </address>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p class="text-light mb-0">Copyright © 2023
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="credit bg-dark">copyright</div>
         </footer>
+
 
 
 

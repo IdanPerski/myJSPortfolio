@@ -2,28 +2,36 @@ const projectHeader = document.querySelectorAll(".project-header");
 const projectPage = document.querySelectorAll(".project-page");
 const projectSection = document.querySelector("#projectSection");
 const backToMainPage = document.querySelectorAll(".back-to-main-page");
+const contactSection = document.querySelector(".contact-section");
 
+// Define function to show/hide elements
 const displayAndUndisplay = (dispaly, undisplay) => {
   dispaly.classList.remove("d-none");
   undisplay.classList.add("d-none");
 };
 
+// Define function to hide all elements in a NodeList
 function iterateThruNodeListAndUndisplay(nodeList) {
   nodeList.forEach((node) => {
     node.classList.contains("d-none") ? null : node.classList.add("d-none");
   });
 }
 
+// Add event listeners to "back to main page" buttons
 backToMainPage.forEach((button) => {
   button.addEventListener("click", () => {
     iterateThruNodeListAndUndisplay(projectPage);
+    projectSection.classList.add("d-none");
     projectSection.classList.remove("d-none");
   });
 });
 
+// Add event listeners to project headers
 for (let i = 0; i < projectHeader.length; i++) {
+  console.log(projectHeader[i]);
   projectHeader[i].addEventListener("click", () => {
     displayAndUndisplay(projectPage[i], projectSection);
+    contactSection.classList.add("d-none");
   });
 }
 
@@ -31,7 +39,7 @@ let messageArray = [];
 const formBtn = document.querySelector("#sendBtn");
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
+  // Get form input values and regex patterns for validation
   const nameInput = document.querySelector("#nameInput");
   const emailInput = document.querySelector("#emailInput");
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

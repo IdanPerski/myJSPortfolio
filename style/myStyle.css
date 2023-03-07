@@ -5,11 +5,17 @@
 }
 
 .myNavbar {
-    background-color: #9096e6 !important;
+    background: linear-gradient(90deg, #9096e6, #2ab0d6) !important;
+    border-bottom: 1px solid !important;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: .7;
 }
 
+
 .first-div-style {
-    background-color: #e7e7d9;
+
+    background-color: #f5f5f5;
+    /* or #d1e5f0 or #fad0c4 */
     display: flex;
 
 }
@@ -23,9 +29,11 @@ ul>img {
 }
 
 .main-tech-list {
-    background-color: #c2bff5;
-
+    background: linear-gradient(90deg, #c2bff5, #a2a1e8, #2ab0d6);
+    border: solid 0.5px;
+    box-shadow: 10px 20px 100px rgba(0, 0, 0, 0.1);
 }
+
 
 img {
     width: 11rem;
@@ -41,13 +49,20 @@ textarea {
 }
 
 footer {
-    background-color: #9096e6 !important;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 address {
     height: 4rem;
     margin: 0;
 }
+
+
 
 
 
