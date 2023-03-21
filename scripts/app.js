@@ -23,6 +23,7 @@ backToMainPage.forEach((button) => {
     iterateThruNodeListAndUndisplay(projectPage);
     projectSection.classList.add("d-none");
     projectSection.classList.remove("d-none");
+    contactSection.classList.remove("d-none");
   });
 });
 
